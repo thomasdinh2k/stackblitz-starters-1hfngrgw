@@ -12,11 +12,21 @@
       display: flex;
       gap: 32px;
       border: 3px solid orange;
+      overflow: auto;
     }
 
     .col {
       flex: 1;
       padding: 16px;
+    }
+    
+    .left {
+      position: sticky;
+      top: 0;
+    }
+
+    .right {
+      height: 0;
     }
   </style>
   <body>
@@ -26,7 +36,7 @@
     </nav>
     <main>
       <section>
-        <div class="col">
+        <div class="col left">
           <h1>Growing Column</h1>
           <p>
             This column will grow very tall indeed, whilst the adjacent one will
@@ -40,7 +50,7 @@
           </p>
         </div>
 
-        <div class="col">
+        <div class="col right">
           <p>Here is a list of all the letters in the English language:</p>
           <ol>
             <li>Item A</li>
